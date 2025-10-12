@@ -24,7 +24,7 @@ export const CardTitle = ({ className = "", children, ...props }) => (
 );
 
 export const CardDescription = ({ className = "", children, ...props }) => (
-  <p className={cn("text-sm text-slate-600", className)} {...props}>
+  <p className={cn("text-base text-slate-600", className)} {...props}>
     {children}
   </p>
 );

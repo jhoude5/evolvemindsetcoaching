@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { CheckCircle2, HeartHandshake, Target, Calendar, ArrowRight, MessageCircle, Instagram, Mail, Phone, BookOpen, Sparkles } from "lucide-react";
+import { CheckCircle2, HeartHandshake, Target, Calendar, ArrowRight, MessageCircle, Instagram, Mail, Phone, BookOpen, Sparkles, Download, Menu, X } from "lucide-react";
 import logoImage from "../images/evolve-logo.png";
 import honeycombBg from "../images/honeycomb.svg";
 import anchorIcon from "../images/anchor.svg";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Simple brand tokens
 const brand = {
@@ -28,6 +27,7 @@ const navItems = [
 export default function Website() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   // Dev-only smoke tests (won't run on server)
   useEffect(() => {
@@ -43,6 +43,8 @@ export default function Website() {
     e.preventDefault();
     setSubmitted(true);
   };
+
+  const handleNavClick = () => setMobileOpen(false);
 
   return (
     <>
@@ -64,15 +66,49 @@ export default function Website() {
               <div className="text-xs -mt-0.5">{brand.slogan}</div>
             </div>
           </div>
-          <nav className="items-center hidden gap-6 md:flex">
-            {navItems.map((item) => (
-              <a key={item.id} href={`#${item.id}`} className="text-sm transition hover:text-yellow-500">
-                {item.label}
-              </a>
-            ))}
-            <a href="#contact" className="inline-flex items-center gap-2 px-4 py-2 text-sm text-white transition border-2 border-white rounded-2xl hover:bg-white hover:text-black">Book a Session</a>
-          </nav>
+          <div className="flex items-center gap-4">
+            <nav className="items-center hidden gap-6 md:flex">
+              {navItems.map((item) => (
+                <a key={item.id} href={`#${item.id}`} className="text-sm transition hover:text-yellow-500">
+                  {item.label}
+                </a>
+              ))}
+              <a href="#contact" className="inline-flex items-center gap-2 px-4 py-2 text-sm text-white transition border-2 border-white rounded-full hover:bg-white hover:text-black">Book a Session</a>
+            </nav>
+            <button
+              type="button"
+              className="inline-flex items-center justify-center w-12 h-12 border rounded-full border-white/40 md:hidden"
+              onClick={() => setMobileOpen((prev) => !prev)}
+              aria-label="Toggle navigation menu"
+              aria-expanded={mobileOpen}
+            >
+              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
+        {mobileOpen && (
+          <div className="px-8 pb-6 mx-auto max-w-7xl md:hidden">
+            <nav className="flex flex-col gap-4 pt-2 text-sm">
+              {navItems.map((item) => (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className="py-2 transition border-b border-white/10 hover:text-yellow-400 last:border-b-0"
+                  onClick={handleNavClick}
+                >
+                  {item.label}
+                </a>
+              ))}
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 px-4 py-3 mt-2 text-sm text-black bg-yellow-400 rounded-full hover:bg-yellow-300"
+                onClick={handleNavClick}
+              >
+                Book a Session
+              </a>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* Hero */}
@@ -139,12 +175,12 @@ export default function Website() {
       {/* Programs */}
       <section id="programs" className="py-20 bg-white">
         <div className="px-8 mx-auto max-w-7xl">
-          <div className="flex items-end justify-between gap-6 mb-10">
-            <div>
+          <div className="items-end justify-between gap-6 mb-10 md:flex">
+            <div className="mb-8">
               <h2 className="text-3xl font-bold md:text-5xl">Programs</h2>
               <p className="max-w-2xl mt-5 text-black">Choose a focused path or bundle them for a full reboot. Every option includes a kickoff Clarity Call.</p>
             </div>
-            <a href="#contact" className="px-4 py-2 text-black bg-yellow-400 rounded-full">Book a Clarity Call</a>
+            <a href="#contact" className="px-4 py-2 mt-2 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white">Book a Clarity Call</a>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
@@ -186,7 +222,7 @@ export default function Website() {
               <Card key={p.title} className="rounded-3xl">
                 <CardHeader>
                   <CardTitle className="text-xl">{p.title}</CardTitle>
-                  <CardDescription>{p.subtitle}</CardDescription>
+                  <CardDescription className="pt-2">{p.subtitle}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="mb-6 space-y-2">
@@ -194,9 +230,9 @@ export default function Website() {
                       <li key={b} className="flex items-start gap-2 text-slate-700"><CheckCircle2 className="w-5 h-5 mt-0.5"/> {b}</li>
                     ))}
                   </ul>
-                  <p className="flex w-full rounded-2xl">
+                  {/* <p className="flex w-full rounded-2xl">
                     {p.cta} <ArrowRight className="w-4 h-4 ml-2"/>
-                  </p>
+                  </p> */}
                 </CardContent>
               </Card>
             ))}
@@ -207,9 +243,12 @@ export default function Website() {
       {/* Speaking */}
       <section id="speaking" className="py-20 bg-slate-50">
         <div className="px-8 mx-auto max-w-7xl">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold md:text-5xl">Speaking: Be Your Own Anchor</h2>
-            <p className="max-w-3xl mt-5 text-slate-600">Keynotes and workshops that help teams stay grounded in chaotic times. Real stories. Actionable tools. A calm, confident spark that lasts beyond the event.</p>
+          <div className="items-end justify-between gap-6 mb-10 md:flex">
+            <div className="mb-8">
+              <h2 className="text-3xl font-bold md:text-5xl">Speaking: Be Your Own Anchor</h2>
+              <p className="max-w-3xl mt-5 text-slate-600">Keynotes and workshops that help teams stay grounded in chaotic times. Real stories. Actionable tools. A calm, confident spark that lasts beyond the event.</p>
+            </div>
+            <a href="#contact" className="px-4 py-2 mt-2 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white">Inquire for Events</a>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {[
@@ -219,12 +258,12 @@ export default function Website() {
             ].map((s) => (
               <Card key={s.title} className="rounded-3xl">
                 <CardHeader>
-                  <CardTitle>{s.title}</CardTitle>
-                  <CardDescription>{s.desc}</CardDescription>
+                  <CardTitle className="text-xl">{s.title}</CardTitle>
+                  <CardDescription className="pt-2">{s.desc}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <a className="w-full rounded-2xl">Inquire for Events</a>
-                </CardContent>
+                  {/* <a className="w-full rounded-2xl">Inquire for Events</a> */}
+                </CardContent> 
               </Card>
             ))}
           </div>
@@ -234,12 +273,12 @@ export default function Website() {
       {/* Resources */}
       <section id="resources" className="py-20 bg-white">
         <div className="px-8 mx-auto max-w-7xl">
-          <div className="flex items-end justify-between gap-6 mb-10">
-            <div>
+          <div className="items-end justify-between gap-6 mb-10 md:flex">
+            <div className="mb-8">
               <h2 className="text-3xl font-bold md:text-5xl">Free Resources</h2>
               <p className="max-w-2xl mt-5 text-slate-600">Grab checklists, templates, and quick videos to boost your mindset and momentum.</p>
             </div>
-            <a className="px-4 py-2 text-black bg-yellow-400 rounded-full">Get the Starter Pack</a>
+            <a className="flex px-4 py-2 mt-4 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white">Get the Starter Pack <Download className="w-4 h-4 mt-1 ml-2" /></a>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {[
@@ -247,13 +286,15 @@ export default function Website() {
               { title: "Reframe Cheatsheet", desc: "Turn common setbacks into traction in 3 steps." },
               { title: "Quarterly Goal Map", desc: "Break big goals into weekly moves." },
             ].map((r) => (
-              <Card key={r.title} className="rounded-3xl">
+              <Card key={r.title} className="rounded-3xl" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
                 <CardHeader>
-                  <CardTitle>{r.title}</CardTitle>
-                  <CardDescription>{r.desc}</CardDescription>
+                  <CardTitle className="text-xl">{r.title}</CardTitle>
+                  <CardDescription className="pt-2">{r.desc}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <a className="w-full rounded-2xl" download>Download</a>
+                  <a className="inline-flex items-center gap-2 underline rounded-2xl" download>
+                    Download <Download className="w-4 h-4" />
+                  </a>
                 </CardContent>
               </Card>
             ))}
@@ -302,15 +343,15 @@ export default function Website() {
               <h2 className="text-3xl font-bold md:text-5xl">Book a Clarity Call</h2>
               <p className="mt-5 text-slate-600">Tell me where you feel stuck. We’ll map your next right moves.</p>
               <div className="mt-6 space-y-3 text-slate-700">
-                <p className="flex items-center gap-2"><Phone className="w-5 h-5"/> <a href={`tel:${brand.phone}`} className="hover:underline">{brand.phone}</a></p>
-                <p className="flex items-center gap-2"><Mail className="w-5 h-5"/> <a href={`mailto:${brand.email}`} className="hover:underline">{brand.email}</a></p>
-                <p className="flex items-center gap-2"><Instagram className="w-5 h-5"/> <a href="#" className="hover:underline">@evolvemindsetcoaching</a></p>
-                <p className="flex items-center gap-2"><MessageCircle className="w-5 h-5"/> Prefer SMS? Text me to get started.</p>
+                <p className="flex items-center gap-2 text-base"><Phone className="w-5 h-5"/> <a href={`tel:${brand.phone}`} className="hover:underline">{brand.phone}</a></p>
+                <p className="flex items-center gap-2 text-base"><Mail className="w-5 h-5"/> <a href={`mailto:${brand.email}`} className="hover:underline">{brand.email}</a></p>
+                <p className="flex items-center gap-2 text-base"><Instagram className="w-5 h-5"/> <a href="https://www.instagram.com/evolve.mindset.coaching/" className="hover:underline">@evolvemindsetcoaching</a></p>
+                <p className="flex items-center gap-2 text-base"><MessageCircle className="w-5 h-5"/> <a href={`sms:${brand.phone}`} className="hover:underline">Prefer SMS? Text me to get started.</a></p>
               </div>
             </div>
             <Card className="rounded-3xl">
               <CardHeader>
-                <CardTitle>Send a Message</CardTitle>
+                <CardTitle className="text-2xl">Send a Message</CardTitle>
                 <CardDescription>I’ll reply with available times within one business day.</CardDescription>
               </CardHeader>
               <CardContent>
@@ -321,10 +362,25 @@ export default function Website() {
                   </div>
                 ) : (
                   <form onSubmit={onSubmit} className="space-y-4">
-                    <input required placeholder="Your name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="rounded-2xl"/>
-                    <input required type="email" placeholder="Email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} className="rounded-2xl"/>
-                    <textarea required placeholder="How can I help?" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="rounded-2xl min-h-[140px]"/>
-                    <a type="submit" className="w-full rounded-2xl">Send</a>
+                      <div className="flex gap-4">
+                        <div className="w-full">
+                        <label for="name" style={{ visibility: "hidden", width: "0", height: "0", display: "block"}}>Name</label>
+                        <input name="name" id="name" autocomplete required placeholder="Your name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full px-4 py-2"/>
+                      </div>
+                      <div className="w-full">
+                        <label for="email" style={{ visibility: "hidden", width: "0", height: "0", display: "block"}}>Email</label>
+                        <input name="email" className="w-full px-4 py-2" required type="email" autocomplete placeholder="Email" id="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} />
+                      </div>
+                    </div>
+                    
+                    <div className="flex">
+                      <label for="message" style={{ visibility: "hidden", width: "0", height: "0", display: "block"}}>Message</label>
+                      <textarea name="message" autocomplete required placeholder="How can I help?" id="message" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="min-h-[140px] px-4 py-2 w-full"/>
+                    </div>
+                    <div>
+                      <a type="submit" className="px-4 py-2 mt-4 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white">Send</a>
+                    </div>
+                    
                   </form>
                 )}
               </CardContent>

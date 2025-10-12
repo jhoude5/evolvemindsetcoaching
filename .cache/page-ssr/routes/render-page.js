@@ -400,14 +400,19 @@ HTML.propTypes = {
 /*!***********************!*\
   !*** ./gatsby-ssr.js ***!
   \***********************/
-/***/ ((__unused_webpack_module, exports) => {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+const React = __webpack_require__(/*! react */ "react");
 exports.onRenderBody = ({
-  setHtmlAttributes
+  setHtmlAttributes,
+  setHeadComponents
 }) => {
   setHtmlAttributes({
     lang: "en"
   });
+  setHeadComponents([/*#__PURE__*/React.createElement("title", {
+    key: "title"
+  }, "Evolve Mindset Coaching")]);
 };
 
 /***/ }),

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="270.00"
-   height="236.51"
-   viewBox="0 0 270.00 236.51"
+   width="413"
+   height="411.51001"
+   viewBox="0 0 413 411.51002"
    version="1.1"
    id="svg5"
    sodipodi:docname="diagonal_connected_5hex.svg"
@@ -23,42 +23,61 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="0.99784367"
-     inkscape:cx="134.79065"
-     inkscape:cy="118.255"
+     inkscape:cx="228.99379"
+     inkscape:cy="176.38033"
      inkscape:window-width="1312"
-     inkscape:window-height="449"
-     inkscape:window-x="59"
+     inkscape:window-height="741"
+     inkscape:window-x="61"
      inkscape:window-y="38"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg5" />
   <polygon
-     points="110.00,96.60 85.00,139.90 35.00,139.90 10.00,96.60 35.00,53.30 85.00,53.30"
+     points="85,139.9 35,139.9 10,96.6 35,53.3 85,53.3 110,96.6 "
      fill="none"
-     stroke="#F8D64E"
+     stroke="#f8d64e"
      stroke-width="3"
-     id="polygon1" />
+     id="polygon1"
+     transform="rotate(90,9.128897,229.32415)" />
   <polygon
-     points="185.00,53.30 160.00,96.60 110.00,96.60 85.00,53.30 110.00,10.00 160.00,10.00"
+     points="160,96.6 110,96.6 85,53.3 110,10 160,10 185,53.3 "
      fill="none"
-     stroke="#F8D64E"
+     stroke="#f8d64e"
      stroke-width="3"
-     id="polygon2" />
+     id="polygon2"
+     transform="rotate(-90,207.96364,207.43868)" />
   <polygon
-     points="110.00,183.21 85.00,226.51 35.00,226.51 10.00,183.21 35.00,139.90 85.00,139.90"
+     points="35,139.9 85,139.9 110,183.21 85,226.51 35,226.51 10,183.21 "
      fill="none"
-     stroke="#F8D64E"
+     stroke="#f8d64e"
      stroke-width="3"
-     id="polygon3" />
+     id="polygon3"
+     transform="rotate(90,156.36031,299.9765)" />
   <polygon
-     points="185.00,139.90 160.00,183.21 110.00,183.21 85.00,139.90 110.00,96.60 160.00,96.60"
+     points="85,139.9 110,183.21 85,226.51 35,226.51 10,183.21 35,139.9 "
      fill="none"
-     stroke="#F8D64E"
+     stroke="#f8d64e"
      stroke-width="3"
-     id="polygon4" />
+     id="polygon3-2"
+     transform="rotate(90,36.763472,332.3745)" />
   <polygon
-     points="260.00,96.60 235.00,139.90 185.00,139.90 160.00,96.60 185.00,53.30 235.00,53.30"
+     points="110,183.21 85,226.51 35,226.51 10,183.21 35,139.9 85,139.9 "
      fill="none"
-     stroke="#F8D64E"
+     stroke="#f8d64e"
      stroke-width="3"
-     id="polygon5" />
+     id="polygon3-2-9"
+     transform="rotate(90,215.36158,284.86453)" />
+  <polygon
+     points="35,226.51 10,183.21 35,139.9 85,139.9 110,183.21 85,226.51 "
+     fill="none"
+     stroke="#f8d64e"
+     stroke-width="3"
+     id="polygon3-2-9-8"
+     transform="rotate(90,274.70058,269.33751)" />
+  <polygon
+     points="160,96.6 185,139.9 160,183.21 110,183.21 85,139.9 110,96.6 "
+     fill="none"
+     stroke="#f8d64e"
+     stroke-width="3"
+     id="polygon4"
+     transform="rotate(90,127.59598,197.41708)" />
 </svg>

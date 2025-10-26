@@ -429,7 +429,7 @@ export default function Website() {
                     <p className="mt-1 text-sm text-slate-600">In production, connect this form to your email, a CRM, or a booking link.</p>
                   </div>
                 ) : (
-                  <form onSubmit={onSubmit} className="space-y-4" netlify name="contact">
+                  <form className="space-y-4" name="contact" method="POST" data-netlify="true">
                       <div className="flex gap-4">
                         <div className="w-full">
                         <label for="name" style={{ visibility: "hidden", width: "0", height: "0", display: "block"}}>Name</label>
@@ -446,7 +446,7 @@ export default function Website() {
                       <textarea name="message" autocomplete required placeholder="How can I help?" id="message" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="min-h-[140px] px-4 py-2 w-full"/>
                     </div>
                     <div>
-                      <a type="submit" className="px-4 py-2 mt-4 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white">Send</a>
+                      <button type="submit" className="px-4 py-2 mt-4 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white">Send</button>
                     </div>
                     
                   </form>

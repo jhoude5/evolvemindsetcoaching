@@ -28,10 +28,12 @@ const navItems = [
 export default function Website() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submitError, setSubmitError] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Dev-only smoke tests (won't run on server)
   useEffect(() => {
@@ -67,21 +69,40 @@ export default function Website() {
     const formElement = event.target;
     const formData = new FormData(formElement);
     setSubmitError("");
+    setIsSubmitting(true);
 
     try {
-      await fetch("/", {
+      const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
       });
 
+      const isLocalDev =
+        typeof window !== "undefined" &&
+        ["localhost", "127.0.0.1"].includes(window.location.hostname);
+      const submissionAccepted = response.ok || (response.status === 404 && isLocalDev);
+
+      if (!submissionAccepted) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
+
+      if (response.status === 404 && isLocalDev) {
+        console.warn(
+          "Netlify form submission returned 404 in local development. Treating as success for demo purposes."
+        );
+      }
+
       setSubmitError("");
+      setSubmitted(true);
       setName("");
       setEmail("");
       setMessage("");
     } catch (error) {
       console.error("Form submission failed", error);
       setSubmitError("Something went wrong. Please try again or email me directly.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -448,10 +469,15 @@ export default function Website() {
             <Card className="rounded-3xl">
               <CardHeader>
                 <CardTitle className="text-2xl">Send a Message</CardTitle>
-                <CardDescription>I’ll reply with available times within one business day.</CardDescription>
+                {/* <CardDescription></CardDescription> */}
               </CardHeader>
               <CardContent>
-                
+                {submitted ? (
+                  <div className="p-6 border border-green-200 rounded-2xl bg-green-50" role="status" aria-live="polite">
+                    <p className="font-medium">Thanks for contacting me! I’ll reply with available times within one business day.</p>
+                   
+                  </div>
+                ) : (
                   <form
                     onSubmit={handleSubmit}
                     className="space-y-4"
@@ -460,12 +486,9 @@ export default function Website() {
                     data-netlify="true"
                   >
                     <input type="hidden" name="form-name" value="contact" />
-                    <div className="flex gap-4">
+                    <div className="flex gap-4" style={{marginTop: "0"}}>
                       <div className="w-full">
-                        <label
-                          htmlFor="name"
-                          className="sr-only"
-                        >
+                        <label htmlFor="name" className="sr-only">
                           Name
                         </label>
                         <input
@@ -480,10 +503,7 @@ export default function Website() {
                         />
                       </div>
                       <div className="w-full">
-                        <label
-                          htmlFor="email"
-                          className="sr-only"
-                        >
+                        <label htmlFor="email" className="sr-only">
                           Email
                         </label>
                         <input
@@ -501,10 +521,7 @@ export default function Website() {
                     </div>
 
                     <div>
-                      <label
-                        htmlFor="message"
-                        className="sr-only"
-                      >
+                      <label htmlFor="message" className="sr-only">
                         Message
                       </label>
                       <textarea
@@ -518,21 +535,30 @@ export default function Website() {
                         className="w-full px-4 py-3 border rounded-2xl min-h-[140px] border-slate-200 focus:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-200"
                       />
                     </div>
-                    {submitError && (
-                      <p className="text-sm text-red-600" role="alert">
-                        {submitError}
-                      </p>
+                    {(isSubmitting || submitError) && (
+                      <div
+                        className={`flex items-center gap-2 px-4 py-3 text-sm rounded-2xl ${
+                          isSubmitting
+                            ? "bg-yellow-50 text-yellow-700"
+                            : "bg-red-50 text-red-700"
+                        }`}
+                        role="status"
+                        aria-live="polite"
+                      >
+                        {isSubmitting ? "Sending your message…" : submitError}
+                      </div>
                     )}
                     <div>
                       <button
                         type="submit"
-                        className="px-4 py-2 mt-2 text-black transition-colors duration-200 bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white"
+                        disabled={isSubmitting}
+                        className="px-6 py-2 mt-2 text-black transition-colors duration-200 bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white disabled:opacity-60 disabled:cursor-not-allowed"
                       >
-                        Send
+                        {isSubmitting ? "Sending…" : "Send"}
                       </button>
                     </div>
                   </form>
-                
+                )}
               </CardContent>
             </Card>
           </div>

@@ -26,10 +26,12 @@ const navItems = [
 ];
 
 export default function Website() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitError, setSubmitError] = useState("");
 
   // Dev-only smoke tests (won't run on server)
   useEffect(() => {
@@ -60,36 +62,34 @@ export default function Website() {
 
   const handleNavClick = () => setMobileOpen(false);
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  
-  const hanleSubmit = e => {
-    e.preventDefault()
-    const myForm = e.target;
-    const formData = new FormData(myForm);
-    fetch("/", {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formElement = event.target;
+    const formData = new FormData(formElement);
+    setSubmitError("");
+
+    try {
+      await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
-    })
-        .then(() => {
-            document.querySelector('.success').innerText =
-                "Thank you for reaching out to us, we'd get back to you shortly.";
-            // Clear form fields
-            setName('');
-            setEmail('');
-            setMessage('');
-        })
-        .catch((error) => document.querySelector('.error').innerText = 'Something went wrong, pls try again.');
+      });
 
-  }
+      setSubmitError("");
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.error("Form submission failed", error);
+      setSubmitError("Something went wrong. Please try again or email me directly.");
+    }
+  };
 
   return (
     <>
       <a
         href="#main-content"
-        className="absolute left-4 top-4 z-50 inline-flex items-center gap-2 px-5 py-2 text-sm font-semibold text-black bg-white rounded-full shadow-lg -translate-y-full transition-transform duration-150 focus-visible:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400"
+        className="absolute z-50 inline-flex items-center gap-2 px-5 py-2 text-sm font-semibold text-black transition-transform duration-150 -translate-y-full bg-white rounded-full shadow-lg left-4 top-4 focus-visible:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400"
       >
         Skip to content
         <ArrowRight className="w-4 h-4" />
@@ -451,34 +451,88 @@ export default function Website() {
                 <CardDescription>I’ll reply with available times within one business day.</CardDescription>
               </CardHeader>
               <CardContent>
-                {submitted ? (
-                  <div className="p-6 border border-green-200 rounded-2xl bg-green-50">
-                    <p className="font-medium">Thanks! Your message is saved locally in this demo.</p>
-                    <p className="mt-1 text-sm text-slate-600">In production, connect this form to your email, a CRM, or a booking link.</p>
-                  </div>
-                ) : (
-                  <form onSubmit={hanleSubmit} className="space-y-4" name="contact" method="POST" data-netlify="true">
-                      <div className="flex gap-4">
-                        <div className="w-full">
-                        <label for="name" style={{ visibility: "hidden", width: "0", height: "0", display: "block"}}>Name</label>
-                        <input name="name" id="name" autocomplete required placeholder="John Smith" value={name} onChange={({ target }) => setName(target.value)} className="w-full px-4 py-2"/>
+                
+                  <form
+                    onSubmit={handleSubmit}
+                    className="space-y-4"
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                  >
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div className="flex gap-4">
+                      <div className="w-full">
+                        <label
+                          htmlFor="name"
+                          className="sr-only"
+                        >
+                          Name
+                        </label>
+                        <input
+                          name="name"
+                          id="name"
+                          autoComplete="name"
+                          required
+                          placeholder="John Smith"
+                          value={name}
+                          onChange={({ target }) => setName(target.value)}
+                          className="w-full px-4 py-2 border rounded-xl border-slate-200 focus:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-200"
+                        />
                       </div>
                       <div className="w-full">
-                        <label for="email" style={{ visibility: "hidden", width: "0", height: "0", display: "block"}}>Email</label>
-                        <input name="email" className="w-full px-4 py-2" required type="email" autocomplete placeholder="john@email.com" id="email" value={email} onChange={({ target }) => setEmail(target.value)} />
+                        <label
+                          htmlFor="email"
+                          className="sr-only"
+                        >
+                          Email
+                        </label>
+                        <input
+                          name="email"
+                          id="email"
+                          className="w-full px-4 py-2 border rounded-xl border-slate-200 focus:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-200"
+                          required
+                          type="email"
+                          autoComplete="email"
+                          placeholder="john@email.com"
+                          value={email}
+                          onChange={({ target }) => setEmail(target.value)}
+                        />
                       </div>
                     </div>
-                    
-                    <div className="flex">
-                      <label for="message" style={{ visibility: "hidden", width: "0", height: "0", display: "block"}}>Message</label>
-                      <textarea name="message" autocomplete required placeholder="How can I help?" id="message" value={message} onChange={({ target }) => setMessage(target.value)} className="min-h-[140px] px-4 py-2 w-full"/>
-                    </div>
+
                     <div>
-                      <button type="submit" className="px-4 py-2 mt-4 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white">Send</button>
+                      <label
+                        htmlFor="message"
+                        className="sr-only"
+                      >
+                        Message
+                      </label>
+                      <textarea
+                        name="message"
+                        id="message"
+                        autoComplete="off"
+                        required
+                        placeholder="How can I help?"
+                        value={message}
+                        onChange={({ target }) => setMessage(target.value)}
+                        className="w-full px-4 py-3 border rounded-2xl min-h-[140px] border-slate-200 focus:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-200"
+                      />
                     </div>
-                    
+                    {submitError && (
+                      <p className="text-sm text-red-600" role="alert">
+                        {submitError}
+                      </p>
+                    )}
+                    <div>
+                      <button
+                        type="submit"
+                        className="px-4 py-2 mt-2 text-black transition-colors duration-200 bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white"
+                      >
+                        Send
+                      </button>
+                    </div>
                   </form>
-                )}
+                
               </CardContent>
             </Card>
           </div>

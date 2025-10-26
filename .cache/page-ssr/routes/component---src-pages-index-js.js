@@ -9127,6 +9127,39 @@ var defaultAttributes = {
 
 /***/ }),
 
+/***/ "./node_modules/lucide-react/dist/esm/icons/arrow-right.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/arrow-right.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ ArrowRight)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.545.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M5 12h14", key: "1ays0h" }],
+  ["path", { d: "m12 5 7 7-7 7", key: "xquz4c" }]
+];
+const ArrowRight = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("arrow-right", __iconNode);
+
+
+//# sourceMappingURL=arrow-right.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-react/dist/esm/icons/book-open.js":
 /*!***************************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/book-open.js ***!
@@ -9230,6 +9263,40 @@ const CircleCheck = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["defaul
 
 
 //# sourceMappingURL=circle-check.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/download.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/download.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Download)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.545.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M12 15V3", key: "m9g1x1" }],
+  ["path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", key: "ih7n3h" }],
+  ["path", { d: "m7 10 5 5 5-5", key: "brsn70" }]
+];
+const Download = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("download", __iconNode);
+
+
+//# sourceMappingURL=download.js.map
 
 
 /***/ }),
@@ -9339,6 +9406,40 @@ const Mail = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("m
 
 /***/ }),
 
+/***/ "./node_modules/lucide-react/dist/esm/icons/menu.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/menu.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Menu)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.545.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M4 5h16", key: "1tepv9" }],
+  ["path", { d: "M4 12h16", key: "1lakjw" }],
+  ["path", { d: "M4 19h16", key: "1djgab" }]
+];
+const Menu = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("menu", __iconNode);
+
+
+//# sourceMappingURL=menu.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-react/dist/esm/icons/message-circle.js":
 /*!********************************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/message-circle.js ***!
@@ -9415,6 +9516,47 @@ const Phone = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("
 
 /***/ }),
 
+/***/ "./node_modules/lucide-react/dist/esm/icons/sparkles.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/sparkles.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ Sparkles)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.545.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  [
+    "path",
+    {
+      d: "M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z",
+      key: "1s2grr"
+    }
+  ],
+  ["path", { d: "M20 2v4", key: "1rf3ol" }],
+  ["path", { d: "M22 4h-4", key: "gwowj6" }],
+  ["circle", { cx: "4", cy: "20", r: "2", key: "6kqj1y" }]
+];
+const Sparkles = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("sparkles", __iconNode);
+
+
+//# sourceMappingURL=sparkles.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/lucide-react/dist/esm/icons/target.js":
 /*!************************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/target.js ***!
@@ -9445,6 +9587,39 @@ const Target = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
 
 
 //# sourceMappingURL=target.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/lucide-react/dist/esm/icons/x.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/x.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   __iconNode: () => (/* binding */ __iconNode),
+/* harmony export */   "default": () => (/* binding */ X)
+/* harmony export */ });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "./node_modules/lucide-react/dist/esm/createLucideIcon.js");
+/**
+ * @license lucide-react v0.545.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M18 6 6 18", key: "1bl5f8" }],
+  ["path", { d: "m6 6 12 12", key: "d8bk6v" }]
+];
+const X = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__["default"])("x", __iconNode);
+
+
+//# sourceMappingURL=x.js.map
 
 
 /***/ }),
@@ -17234,17 +17409,17 @@ const CardContent = ({
 
 /***/ }),
 
-/***/ "./src/images/anchor.svg":
-/*!*******************************!*\
-  !*** ./src/images/anchor.svg ***!
-  \*******************************/
+/***/ "./src/images/anchor-wings.png":
+/*!*************************************!*\
+  !*** ./src/images/anchor-wings.png ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gRGVzaWduZWQgYnkgVmV4ZWxzLmNvbSAtIDIwMTYgQWxsIFJpZ2h0cyBSZXNlcnZlZCAtIGh0dHBzOi8vdmV4ZWxzLmNvbS90ZXJtcy1hbmQtY29uZGl0aW9ucy8gIC0tPg0KDQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTIwMHB4IiBoZWlnaHQ9IjEyMDBweCIgdmlld0JveD0iMCAwIDEyMDAgMTIwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTIwMCAxMjAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xMDc2LjU1Nyw3MDAuOTY3Yy03My43MjEsMjkuNjY0LTE2OS4zNTcsOTkuNDAyLTE3Ny4wNzQsMTAyLjU1Yy03LjU5MywzLjExNy00MC4zNzcsNTAuMzUsMjMuODk1LDY3LjgyMg0KCWMtMzkuOTQ3LDQ4LjA5Ni0yMDIuNjM1LDEzNy4xOS0zMjMuMDI5LDEwOC40NzdjMzAuMzE1LTE1MS45NDMsNzMuMjg4LTM2Ny40NDksMTAwLjg4NC01MDUuNTk0bDExMC4xNDYsMjIuMDExDQoJYzUuMTg3LDI0LjM1NiwyNC4yNjUsNDQuNTQ3LDUwLjI1Niw0OS43MzFjMzQuNzYsNi45MTcsNjguNTMzLTE1LjYxOSw3NS41MS01MC4zNzljNi45MTctMzQuNzYtMTUuNjE4LTY4LjU2NS01MC4zNzktNzUuNDc4DQoJYy0yNS45OTQtNS4xNTYtNTEuMzY4LDYuMTQyLTY1LjQ0NywyNi42NDJMNzExLjExMiw0MjQuNzdjOC4zMzYtNDEuOTIzLDE0LjItNzEuMjUyLDE2LjIzOS04MS4zNDUNCgljNTQuMjctMTMuNDYsOTguNzIyLTU2LjgzMSwxMTAuMzkzLTExNS4zMzFjMTYuMTEyLTgwLjYzNC0zNi4yNDItMTU5LjEzNy0xMTYuOTM2LTE3NS4xOQ0KCUM2NDAuMTczLDM2LjgyMSw1NjEuNzAxLDg5LjE0Nyw1NDUuNjQ2LDE2OS44MWMtMTIuMjg0LDYxLjU4OCwxNS4zNzYsMTIxLjgxNCw2NS4wNzUsMTU0LjAxMw0KCWMtMi41MjksMTIuNDcxLTcuOTYyLDM5LjkxNi0xNS41NTYsNzcuODI0TDQ4OS4wMywzODAuNDdjLTUuMTg0LTI0LjM4OC0yNC4zMjUtNDQuNTc4LTUwLjI1Ni00OS43OTQNCgljLTM0Ljc2LTYuODg1LTY4LjUzMywxNS42NTEtNzUuNTEsNTAuNDFjLTYuOTEzLDM0LjczMSwxNS42MjMsNjguNTMzLDUwLjM4Miw3NS40NDdjMjUuOTkxLDUuMjE5LDUxLjM2OC02LjA3OSw2NS40NDUtMjYuNjENCglsMTA2LjE5NSwyMS4xNDhjLTI3LjUzNywxMzguMjA4LTcwLjU3MiwzNTMuNjgzLTEwMC44ODcsNTA1LjU5NGMtMTIyLjI0NC0xOS42OTQtMjM4LjE5NC0xNjQuMzUzLTI1Ni42NTUtMjI0LjExOA0KCWM2Ni4wNjEsOC40ODgsNTMuOS00Ny42OTUsNDguMDMzLTUzLjQ5OWMtNS44MDQtNS44NjQtNjcuNDIxLTEwNi45MzUtMTI0LjA5Ni0xNjIuNjI0Yy01Ni42MTktNTUuNjktNTEuNjc4LDEzLjA1OS01MS42NzgsMTMuMDU5DQoJcy0xNy4wNDIsOTcuMDg1LTI1LjA2OCwxNzIuNTYzYy04LjA4Niw3NS40NzgsNjQuNzA1LDUwLjI5LDY0LjcwNSw1MC4yOWM0NC4xNDUsMjIzLjc0OCwyNzcuNDAyLDM0Mi43NTIsMzI4LjcwNywzNzguNjg3DQoJYzE1LjY4MiwxMS4wMiwyOC4yNzksMTUuNjc5LDM4LjE1NywxNi44MjNjOS42MzIsMi43MTUsMjMuMDI5LDMuMzAzLDQxLjc5Ni0wLjgzNWM2MS4wNjQtMTMuNTUyLDMyMi4xNjMtMzMuODk3LDQ0OC43OTUtMjIzLjU2NA0KCWMwLDAsNTcuNTQyLDUxLjE4NSw3OS4wODgtMjEuNjA2YzIxLjQ4Ni03Mi44MjYsNDMuMDM2LTE2OC45ODgsNDMuMDM2LTE2OC45ODhTMTE1MC4yMTIsNjcxLjI2OSwxMDc2LjU1Nyw3MDAuOTY3eg0KCSBNNzA0LjI1OSwxMzYuMDM5YzM0LjcsNi45MTMsNTcuMjk1LDQwLjc0Nyw1MC4zMTksNzUuNDQ3Yy02Ljg1MywzNC43Ni00MC42MjQsNTcuMjk1LTc1LjQ0Niw1MC4zNzkNCgljLTM0Ljc2LTYuOTQ1LTU3LjI5Ni00MC43MTgtNTAuMzE5LTc1LjQ3OEM2MzUuNzI5LDE1MS42NTgsNjY5LjQ5OSwxMjkuMDYzLDcwNC4yNTksMTM2LjAzOXoiLz4NCjwvc3ZnPg0K");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/static/anchor-wings-1c7620383dd1cae91b92710f60c5f4e2.png");
 
 /***/ }),
 
@@ -17289,18 +17464,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! framer-motion */ "./node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/target.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/heart-handshake.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle-check.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/phone.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/mail.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/instagram.js");
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/message-circle.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/x.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/menu.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/target.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/heart-handshake.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/calendar.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/book-open.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/phone.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/circle-check.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/download.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/arrow-right.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/sparkles.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/mail.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/instagram.js");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! lucide-react */ "./node_modules/lucide-react/dist/esm/icons/message-circle.js");
 /* harmony import */ var _images_evolve_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/evolve-logo.png */ "./src/images/evolve-logo.png");
 /* harmony import */ var _images_honeycomb_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/honeycomb.svg */ "./src/images/honeycomb.svg");
-/* harmony import */ var _images_anchor_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/anchor.svg */ "./src/images/anchor.svg");
+/* harmony import */ var _images_anchor_wings_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/anchor-wings.png */ "./src/images/anchor-wings.png");
 /* harmony import */ var _components_ui_card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ui/card */ "./src/components/ui/card.js");
 
 
@@ -17322,18 +17502,19 @@ const navItems = [{
   id: "home",
   label: "Home"
 }, {
+  id: "about",
+  label: "About"
+}, {
   id: "programs",
   label: "Programs"
-}, {
-  id: "speaking",
-  label: "Speaking"
-}, {
+},
+// { id: "speaking", label: "Speaking" },
+{
   id: "resources",
   label: "Resources"
-}, {
-  id: "testimonials",
-  label: "Praise"
-}, {
+},
+// { id: "testimonials", label: "Praise" },
+{
   id: "contact",
   label: "Contact"
 }];
@@ -17350,6 +17531,14 @@ function Website() {
     0: submitted,
     1: setSubmitted
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const {
+    0: mobileOpen,
+    1: setMobileOpen
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const {
+    0: aboutOpen,
+    1: setAboutOpen
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
 
   // Dev-only smoke tests (won't run on server)
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
@@ -17360,10 +17549,26 @@ function Website() {
       console.assert(!!document.getElementById("contact"), "Smoke test: #contact section should exist");
     }
   }, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (!aboutOpen || typeof document === "undefined") return;
+    const handleKeyDown = event => {
+      if (event.key === "Escape") setAboutOpen(false);
+    };
+    const {
+      overflow
+    } = document.body.style;
+    document.body.style.overflow = "hidden";
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.body.style.overflow = overflow;
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [aboutOpen]);
   const onSubmit = e => {
     e.preventDefault();
     setSubmitted(true);
   };
+  const handleNavClick = () => setMobileOpen(false);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
@@ -17395,7 +17600,9 @@ function Website() {
     className: "text-xl font-semibold leading-tight"
   }, brand.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "text-xs -mt-0.5"
-  }, brand.slogan))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+  }, brand.slogan))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex items-center gap-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: "items-center hidden gap-6 md:flex"
   }, navItems.map(item => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     key: item.id,
@@ -17403,7 +17610,30 @@ function Website() {
     className: "text-sm transition hover:text-yellow-500"
   }, item.label)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#contact",
-    className: "inline-flex items-center gap-2 px-4 py-2 text-sm text-white transition border-2 border-white rounded-2xl hover:bg-white hover:text-black"
+    className: "inline-flex items-center gap-2 px-4 py-2 text-sm text-white transition border-2 border-white rounded-full hover:bg-white hover:text-black"
+  }, "Book a Session")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    type: "button",
+    className: "inline-flex items-center justify-center w-12 h-12 border rounded-full border-white/40 md:hidden",
+    onClick: () => setMobileOpen(prev => !prev),
+    "aria-label": "Toggle navigation menu",
+    "aria-expanded": mobileOpen
+  }, mobileOpen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "w-6 h-6"
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    className: "w-6 h-6"
+  })))), mobileOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "px-8 pb-6 mx-auto max-w-7xl md:hidden"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+    className: "flex flex-col gap-4 pt-2 text-sm"
+  }, navItems.map(item => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    key: item.id,
+    href: `#${item.id}`,
+    className: "py-2 transition border-b border-white/10 hover:text-yellow-400 last:border-b-0",
+    onClick: handleNavClick
+  }, item.label)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "#contact",
+    className: "inline-flex items-center justify-center gap-2 px-4 py-3 mt-2 text-sm text-black bg-yellow-400 rounded-full hover:bg-yellow-300",
+    onClick: handleNavClick
   }, "Book a Session")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "home",
     className: "relative overflow-hidden text-white bg-black hero"
@@ -17445,7 +17675,7 @@ function Website() {
   }, "Become your own ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "inline-flex items-center gap-2"
   }, "anchor ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: _images_anchor_svg__WEBPACK_IMPORTED_MODULE_3__["default"],
+    src: _images_anchor_wings_png__WEBPACK_IMPORTED_MODULE_3__["default"],
     alt: "Anchor icon",
     style: {
       width: "4rem",
@@ -17457,10 +17687,10 @@ function Website() {
     className: "flex flex-wrap gap-3 mt-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#contact",
-    className: "px-4 py-2 text-black bg-yellow-400 rounded-full"
+    className: "px-4 py-2 text-black transition-colors duration-200 bg-yellow-400 rounded-full hover:bg-white"
   }, "Start Your Clarity Call"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#programs",
-    className: "px-4 py-2 text-black bg-yellow-400 rounded-full"
+    className: "px-4 py-2 text-black transition-colors duration-200 bg-yellow-400 rounded-full hover:bg-white"
   }, "Explore Programs")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "flex flex-wrap gap-2 mt-6 text-sm"
   }, brand.hashtags.map(h => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -17491,19 +17721,19 @@ function Website() {
   }, "Simple tools. Strong habits. Sustainable change."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "mt-6 space-y-4"
   }, [{
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"],
+    icon: lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"],
     title: "Goals with a spine",
     desc: "Yearly goals broken into 4 steps you can actually do."
   }, {
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_7__["default"],
+    icon: lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"],
     title: "Resilient mindset",
     desc: "Reframe setbacks into opportunities that fuel momentum."
   }, {
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_8__["default"],
+    icon: lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"],
     title: "Weekly rhythm",
     desc: "Anchored routines to keep you consistent, not perfect."
   }, {
-    icon: lucide_react__WEBPACK_IMPORTED_MODULE_9__["default"],
+    icon: lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"],
     title: "Practical tools",
     desc: "Workbooks, video modules, and checklists you’ll reuse."
   }].map(f => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17531,15 +17761,19 @@ function Website() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "px-8 mx-auto max-w-7xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex items-end justify-between gap-6 mb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "items-end justify-between gap-6 mb-10 md:flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "mb-8"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-3xl font-bold md:text-5xl"
   }, "Programs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "max-w-2xl mt-5 text-black"
   }, "Choose a focused path or bundle them for a full reboot. Every option includes a kickoff Clarity Call.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#contact",
-    className: "px-4 py-2 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white"
-  }, "Book a Clarity Call")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "inline-flex items-center gap-2 px-4 py-2 mt-2 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white"
+  }, "Book a Clarity Call", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    className: "w-4 h-4"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "grid gap-6 md:grid-cols-3"
   }, [{
     title: "4-Week Goal-Setting Accelerator",
@@ -17568,7 +17802,7 @@ function Website() {
   }, p.bullets.map(b => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     key: b,
     className: "flex items-start gap-2 text-slate-700"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
     className: "w-5 h-5 mt-0.5"
   }), " ", b))))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "speaking",
@@ -17576,7 +17810,7 @@ function Website() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "px-8 mx-auto max-w-7xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex items-end justify-between gap-6 mb-10"
+    className: "items-end justify-between gap-6 mb-10 md:flex"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "mb-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
@@ -17585,8 +17819,10 @@ function Website() {
     className: "max-w-3xl mt-5 text-slate-600"
   }, "Keynotes and workshops that help teams stay grounded in chaotic times. Real stories. Actionable tools. A calm, confident spark that lasts beyond the event.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#contact",
-    className: "px-4 py-2 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white"
-  }, "Inquire for Events")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "inline-flex items-center gap-2 px-4 py-2 mt-2 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white"
+  }, "Inquire for Events", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    className: "w-4 h-4"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "grid gap-6 md:grid-cols-3"
   }, [{
     title: "Anchor Yourself in Any Storm",
@@ -17610,14 +17846,18 @@ function Website() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "px-8 mx-auto max-w-7xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "flex items-end justify-between gap-6 mb-10"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "items-end justify-between gap-6 mb-10 md:flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "mb-8"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "text-3xl font-bold md:text-5xl"
   }, "Free Resources"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "max-w-2xl mt-5 text-slate-600"
   }, "Grab checklists, templates, and quick videos to boost your mindset and momentum.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "px-4 py-2 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white"
-  }, "Get the Starter Pack")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex px-4 py-2 mt-4 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white"
+  }, "Get the Starter Pack ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    className: "w-4 h-4 mt-1 ml-2"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "grid gap-6 md:grid-cols-3"
   }, [{
     title: "Morning Anchor Routine",
@@ -17641,9 +17881,11 @@ function Website() {
   }, r.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_card__WEBPACK_IMPORTED_MODULE_4__.CardDescription, {
     className: "pt-2"
   }, r.desc)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_card__WEBPACK_IMPORTED_MODULE_4__.CardContent, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
-    className: "w-full underline rounded-2xl",
+    className: "inline-flex items-center gap-2 underline rounded-2xl",
     download: true
-  }, "Download"))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  }, "Download ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    className: "w-4 h-4"
+  })))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "testimonials",
     className: "py-20 bg-slate-50"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17672,8 +17914,40 @@ function Website() {
   }, "\u201C", t.quote, "\u201D"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ui_card__WEBPACK_IMPORTED_MODULE_4__.CardDescription, {
     className: "mt-2"
   }, "\u2014 ", t.name, ", ", t.role))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    id: "contact",
+    id: "about",
     className: "py-20 bg-white"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "grid gap-12 px-8 mx-auto max-w-7xl md:grid-cols-[1.1fr,0.9fr]"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "text-3xl font-bold md:text-5xl"
+  }, "Meet Your Coach"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "mt-6 text-slate-600"
+  }, "I help high-capacity leaders and entrepreneurs reclaim calm, courage, and clarity when the stakes feel high. We anchor routines, build resilient mindsets, and create momentum that lasts beyond the first burst of motivation."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "mt-4 text-slate-600"
+  }, "Whether we are mapping your next right step or setting a bold vision, we do it with grounded strategy and a steady presence in your corner."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    type: "button",
+    onClick: () => setAboutOpen(true),
+    className: "inline-flex items-center gap-2 px-5 py-3 mt-8 text-black transition-colors duration-200 bg-yellow-400 rounded-full hover:bg-black hover:text-white"
+  }, "Read My Story", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_15__["default"], {
+    className: "w-4 h-4"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "relative overflow-hidden border rounded-3xl border-slate-100 bg-gradient-to-br from-slate-50 to-white"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top,_#facc15,_transparent_55%)]"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "relative p-10"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "text-2xl font-semibold text-slate-900"
+  }, "What guides my work"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "mt-6 space-y-4 text-slate-600"
+  }, ["Calm is a competitive advantage you can practice.", "Bold moves are built on small, repeatable habits.", "You already have the answers—we build the structure to hear them."].map(principle => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    key: principle,
+    className: "flex items-start gap-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    className: "w-5 h-5 mt-1 text-yellow-500"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, principle)))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+    id: "contact",
+    className: "py-20 bg-slate-50"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "px-8 mx-auto max-w-7xl"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -17686,28 +17960,28 @@ function Website() {
     className: "mt-6 space-y-3 text-slate-700"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "flex items-center gap-2 text-base"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
     className: "w-5 h-5"
   }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: `tel:${brand.phone}`,
     className: "hover:underline"
   }, brand.phone)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "flex items-center gap-2 text-base"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_17__["default"], {
     className: "w-5 h-5"
   }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: `mailto:${brand.email}`,
     className: "hover:underline"
   }, brand.email)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "flex items-center gap-2 text-base"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_18__["default"], {
     className: "w-5 h-5"
   }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "https://www.instagram.com/evolve.mindset.coaching/",
     className: "hover:underline"
   }, "@evolvemindsetcoaching")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "flex items-center gap-2 text-base"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_14__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_19__["default"], {
     className: "w-5 h-5"
   }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: `sms:${brand.phone}`,
@@ -17724,46 +17998,65 @@ function Website() {
     className: "mt-1 text-sm text-slate-600"
   }, "In production, connect this form to your email, a CRM, or a booking link.")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     onSubmit: onSubmit,
-    className: "space-y-4"
+    className: "space-y-4",
+    netlify: true,
+    name: "contact"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex gap-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "w-full"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "name",
     style: {
-      visibility: "hidden"
+      visibility: "hidden",
+      width: "0",
+      height: "0",
+      display: "block"
     }
   }, "Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     name: "name",
     id: "name",
     autocomplete: true,
     required: true,
-    placeholder: "Your name",
+    placeholder: "John Smith",
     value: form.name,
     onChange: e => setForm({
       ...form,
       name: e.target.value
     }),
-    className: "rounded-2xl"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    className: "w-full px-4 py-2"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "w-full"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "email",
     style: {
-      visibility: "hidden"
+      visibility: "hidden",
+      width: "0",
+      height: "0",
+      display: "block"
     }
   }, "Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     name: "email",
+    className: "w-full px-4 py-2",
     required: true,
     type: "email",
     autocomplete: true,
-    placeholder: "Email",
+    placeholder: "john@email.com",
     id: "email",
     value: form.email,
     onChange: e => setForm({
       ...form,
       email: e.target.value
-    }),
-    className: "rounded-2xl"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
+    })
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", {
     for: "message",
     style: {
-      visibility: "hidden"
+      visibility: "hidden",
+      width: "0",
+      height: "0",
+      display: "block"
     }
   }, "Message"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("textarea", {
     name: "message",
@@ -17776,11 +18069,11 @@ function Website() {
       ...form,
       message: e.target.value
     }),
-    className: "rounded-2xl min-h-[140px]"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: "min-h-[140px] px-4 py-2 w-full"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     type: "submit",
-    className: "w-full px-4 py-2 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white"
-  }, "Send"))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
+    className: "px-4 py-2 mt-4 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white"
+  }, "Send")))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
     className: "py-10 bg-black border-t"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "grid items-center gap-6 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 md:grid-cols-2"
@@ -17797,7 +18090,64 @@ function Website() {
   }, "Programs"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#contact",
     className: "hover:underline"
-  }, "Contact"))))));
+  }, "Contact")))), aboutOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "fixed inset-0 z-50 flex items-center justify-center px-4 py-10 bg-black/70 backdrop-blur-sm",
+    role: "dialog",
+    "aria-modal": "true",
+    "aria-labelledby": "about-modal-title"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "absolute inset-0",
+    onClick: () => setAboutOpen(false),
+    "aria-hidden": "true"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(framer_motion__WEBPACK_IMPORTED_MODULE_5__.motion.div, {
+    initial: {
+      opacity: 0,
+      y: 20
+    },
+    animate: {
+      opacity: 1,
+      y: 0
+    },
+    exit: {
+      opacity: 0,
+      y: 20
+    },
+    className: "relative z-10 w-full max-w-3xl p-10 overflow-y-auto bg-white shadow-2xl rounded-3xl max-h-[80vh]"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    type: "button",
+    onClick: () => setAboutOpen(false),
+    className: "absolute flex items-center justify-center w-10 h-10 transition-colors rounded-full top-6 right-6 bg-slate-100 hover:bg-slate-200",
+    "aria-label": "Close about modal"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(lucide_react__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "w-5 h-5"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    id: "about-modal-title",
+    className: "text-3xl font-bold text-slate-900 md:text-4xl"
+  }, "Meet Lucas Burns"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "mt-2 text-sm font-semibold tracking-widest text-yellow-500 uppercase"
+  }, "Founder, Evolve Mindset Coaching"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "mt-6 space-y-4 text-slate-700"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "I didn\u2019t grow up with an easy path. My life began in storms\u2014trauma, rejection, and years of surviving on the streets. But instead of letting those experiences define me, I chose to anchor myself with resilience, a positive attitude, and an unwavering belief that life had more to offer. Every setback became fuel, every failure a lesson, and every storm an opportunity to grow stronger."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Today, at 50, I live with an abundance of love\u2014for myself, for others, and for life itself. That love, paired with resilience, is what carried me through hardship and what I now teach others. My coaching is built on one truth: you already have the wings to rise above your challenges, you just need to trust them."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "font-bold"
+  }, "My Story: Anchored in Life\u2019s Storms"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "I wasn\u2019t handed an easy start. My childhood was marked by trauma, rejection, and punishments that could have broken me. But instead of folding, I discovered something powerful\u2014I could fight back, I could use my voice, and I could believe deep down that life had more waiting for me. That was the first spark of resilience, the anchor that would carry me through every storm that followed."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "font-bold"
+  }, "Teen Years \u2013 Trusting My Wings"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "At just 13 years old, I walked away from home and stepped into the streets of Ottawa. The nights were cold, the days uncertain, and survival depended on awareness and grit. But even then, my mindset was clear: I know I don\u2019t belong in this situation, and there is something better out there for me."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "I wasn\u2019t afraid to take the leap. I lived by what I now call the bird theory\u2014trusting my wings instead of worrying about which branch I\u2019d land on. Even when the environment wasn\u2019t right, I believed I could fly to another branch, another opportunity, and eventually find the place where I truly belonged. That extraordinary trust in myself became my compass."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "font-bold"
+  }, "Early Adulthood \u2013 Hard Lessons, Stronger Roots"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "My teenage years and early adulthood brought more hard lessons\u2014failures at school, run-ins with the law, and the painful realization that no one was coming to rescue me. But with each setback, I uncovered a truth: I didn\u2019t need to ask, \u201CWhat if it doesn\u2019t work?\u201D Instead, I asked, \u201CWhat if it does?\u201D That mindset\u2014tenacity, confidence, and resilience\u2014became my fuel for reinvention."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "font-bold"
+  }, "Adulthood \u2013 Reinvention and Growth"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "When I moved west to Calgary, I built a new life from scratch. Every job, every opportunity became proof that I could transform my story. And as I grew, I discovered that my vulnerability\u2014sharing the darkest parts of my past\u2014wasn\u2019t weakness at all. It was a bridge. It allowed others to heal too, and it showed me that my pain had a purpose."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: "font-bold"
+  }, "Today \u2013 Anchored in Love and Self-Trust"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Now, at 50, I live anchored in self-trust. I\u2019ve learned that true strength isn\u2019t about controlling the storm\u2014it\u2019s about knowing how to stand firm in the middle of it. Discipline, self-love, and the willingness to turn inward have reshaped my life. I live with gratitude, positivity, and an abundance of love\u2014for myself, for others, and for life itself."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "And this is what I teach others: how to trust their wings, anchor themselves, and move forward no matter what life throws at them."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "If you\u2019re ready to stop drifting, to take control of your story, and to turn your setbacks into strength, then welcome. You\u2019ve just found your anchor.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "flex flex-wrap gap-3 mt-8"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    type: "button",
+    onClick: () => setAboutOpen(false),
+    className: "px-5 py-2 text-black transition-colors duration-200 bg-yellow-400 rounded-full hover:bg-black hover:text-white"
+  }, "Back to site"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "#contact",
+    onClick: () => setAboutOpen(false),
+    className: "px-5 py-2 text-sm font-semibold transition-colors duration-200 border rounded-full text-slate-600 border-slate-200 hover:border-slate-900 hover:text-slate-900"
+  }, "Let\u2019s talk"))))));
 }
 
 /***/ })

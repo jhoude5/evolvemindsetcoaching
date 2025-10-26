@@ -481,7 +481,7 @@ export default function Website() {
                   <form
                     onSubmit={handleSubmit}
                     className="space-y-4"
-                    name="contact"
+                    name="Contact"
                     method="POST"
                     data-netlify="true"
                   >

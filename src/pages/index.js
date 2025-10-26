@@ -58,16 +58,43 @@ export default function Website() {
     };
   }, [aboutOpen]);
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
-
   const handleNavClick = () => setMobileOpen(false);
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  
+  const hanleSubmit = e => {
+    e.preventDefault()
+    const myForm = e.target;
+    const formData = new FormData(myForm);
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+    })
+        .then(() => {
+            document.querySelector('.success').innerText =
+                "Thank you for reaching out to us, we'd get back to you shortly.";
+            // Clear form fields
+            setName('');
+            setEmail('');
+            setMessage('');
+        })
+        .catch((error) => document.querySelector('.error').innerText = 'Something went wrong, pls try again.');
+
+  }
 
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
+      <a
+        href="#main-content"
+        className="absolute left-4 top-4 z-50 inline-flex items-center gap-2 px-5 py-2 text-sm font-semibold text-black bg-white rounded-full shadow-lg -translate-y-full transition-transform duration-150 focus-visible:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400"
+      >
+        Skip to content
+        <ArrowRight className="w-4 h-4" />
+      </a>
+      <div className="flex flex-col min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
       {/* Sticky Nav */}
       <header className="sticky top-0 z-50 text-white bg-black border-b backdrop-blur">
         <div className="flex items-center justify-between px-8 mx-auto max-w-7xl sm:px-6 lg:px-8" style={{ paddingTop: "2rem", paddingBottom: "2rem"}}>
@@ -130,6 +157,7 @@ export default function Website() {
         )}
       </header>
 
+      <main id="main-content" className="flex-1">
       {/* Hero */}
       <section id="home" className="relative overflow-hidden text-white bg-black hero">
         <div className="absolute inset-0 flex items-end justify-end pointer-events-none" style={{ bottom: "0", right: "-2rem"}}>
@@ -429,21 +457,21 @@ export default function Website() {
                     <p className="mt-1 text-sm text-slate-600">In production, connect this form to your email, a CRM, or a booking link.</p>
                   </div>
                 ) : (
-                  <form className="space-y-4" name="contact" method="POST" data-netlify="true">
+                  <form onSubmit={hanleSubmit} className="space-y-4" name="contact" method="POST" data-netlify="true">
                       <div className="flex gap-4">
                         <div className="w-full">
                         <label for="name" style={{ visibility: "hidden", width: "0", height: "0", display: "block"}}>Name</label>
-                        <input name="name" id="name" autocomplete required placeholder="John Smith" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full px-4 py-2"/>
+                        <input name="name" id="name" autocomplete required placeholder="John Smith" value={name} onChange={({ target }) => setName(target.value)} className="w-full px-4 py-2"/>
                       </div>
                       <div className="w-full">
                         <label for="email" style={{ visibility: "hidden", width: "0", height: "0", display: "block"}}>Email</label>
-                        <input name="email" className="w-full px-4 py-2" required type="email" autocomplete placeholder="john@email.com" id="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} />
+                        <input name="email" className="w-full px-4 py-2" required type="email" autocomplete placeholder="john@email.com" id="email" value={email} onChange={({ target }) => setEmail(target.value)} />
                       </div>
                     </div>
                     
                     <div className="flex">
                       <label for="message" style={{ visibility: "hidden", width: "0", height: "0", display: "block"}}>Message</label>
-                      <textarea name="message" autocomplete required placeholder="How can I help?" id="message" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} className="min-h-[140px] px-4 py-2 w-full"/>
+                      <textarea name="message" autocomplete required placeholder="How can I help?" id="message" value={message} onChange={({ target }) => setMessage(target.value)} className="min-h-[140px] px-4 py-2 w-full"/>
                     </div>
                     <div>
                       <button type="submit" className="px-4 py-2 mt-4 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white">Send</button>
@@ -456,6 +484,8 @@ export default function Website() {
           </div>
         </div>
       </section>
+
+      </main>
 
       {/* Footer */}
       <footer className="py-10 bg-black border-t">
@@ -540,3 +570,19 @@ export default function Website() {
     </>
   );
 }
+
+export const Head = () => (
+  <>
+    <title>Evolve Mindset Coaching</title>
+    <meta
+      name="description"
+      content="Entrepreneur mindset coach Lucas Houde helps founders build resilient habits, grounded strategies, and calm confidence with personalized programs and clarity calls."
+    />
+    <meta property="og:url" content="https://www.evolvemindsetcoaching.ca" />
+    <meta property="og:title" content="Evolve Mindset Coaching" />
+    <meta
+      property="og:description"
+      content="Entrepreneur mindset coach Lucas Houde helps founders build resilient habits, grounded strategies, and calm confidence with personalized programs and clarity calls."
+    />
+  </>
+);

@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `evolvemindsetcoaching`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.evolvemindsetcoaching.ca`
   },
   plugins: [{
     resolve: 'gatsby-source-contentful',

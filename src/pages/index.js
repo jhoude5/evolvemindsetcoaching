@@ -17,11 +17,11 @@ const brand = {
 
 const navItems = [
   { id: "home", label: "Home" },
-  { id: "about", label: "About" },
   { id: "programs", label: "Programs" },
   // { id: "speaking", label: "Speaking" },
   { id: "resources", label: "Resources" },
   // { id: "testimonials", label: "Praise" },
+  { id: "about", label: "About" },
   { id: "contact", label: "Contact" },
 ];
 

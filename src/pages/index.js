@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { withPrefix } from "gatsby";
 import { motion } from "framer-motion";
 import { CheckCircle2, HeartHandshake, Target, Calendar, ArrowRight, MessageCircle, Instagram, Mail, Phone, BookOpen, Sparkles, Download, Menu, X } from "lucide-react";
 import logoImage from "../images/evolve-logo.png";
 import honeycombBg from "../images/honeycomb.svg";
 import anchorIcon from "../images/wing-anchor.svg";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
+import morningAnchorPdf from "../files/Morning Anchor Routine Online vs 1.0.pdf";
+import reframeCheatsheetPdf from "../files/Reframe Cheat Sheet Online vs 1.0.pdf";
+import quarterlyGoalMapPdf from "../files/Quarterly Goal Setting Worksheet Online vs 1.0.pdf";
 
 // Simple brand tokens
 const brand = {
@@ -352,13 +356,19 @@ export default function Website() {
               <h2 className="text-3xl font-bold md:text-5xl">Free Resources</h2>
               <p className="max-w-2xl mt-5 text-slate-600">Grab checklists, templates, and quick videos to boost your mindset and momentum.</p>
             </div>
-            <a className="flex px-4 py-2 mt-4 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white">Get the Starter Pack <Download className="w-4 h-4 mt-1 ml-2" /></a>
+            <a
+              href={withPrefix("/Resources.zip")}
+              className="flex px-4 py-2 mt-4 text-black bg-yellow-400 rounded-full hover:bg-slate-500 hover:text-white"
+              download
+            >
+              Get the Starter Pack <Download className="w-4 h-4 mt-1 ml-2" />
+            </a>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              { title: "Morning Anchor Routine", desc: "5-minute reset to meet the day with calm." },
-              { title: "Reframe Cheatsheet", desc: "Turn common setbacks into traction in 3 steps." },
-              { title: "Quarterly Goal Map", desc: "Break big goals into weekly moves." },
+              { title: "Morning Anchor Routine", desc: "5-minute reset to meet the day with calm.", href: morningAnchorPdf },
+              { title: "Reframe Cheatsheet", desc: "Turn common setbacks into traction in 3 steps.", href: reframeCheatsheetPdf },
+              { title: "Quarterly Goal Map", desc: "Break big goals into weekly moves.", href: quarterlyGoalMapPdf },
             ].map((r) => (
               <Card key={r.title} className="rounded-3xl" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
                 <CardHeader>
@@ -366,7 +376,7 @@ export default function Website() {
                   <CardDescription className="pt-2">{r.desc}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <a className="inline-flex items-center gap-2 underline rounded-2xl" download>
+                  <a href={r.href} className="inline-flex items-center gap-2 underline rounded-2xl" download>
                     Download <Download className="w-4 h-4" />
                   </a>
                 </CardContent>

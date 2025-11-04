@@ -30,3 +30,9 @@ a {
   width: fit-content;
 }
 
+.social-links {
+  @media(max-width: 768px) {
+    display: none;
+  }
+}
+

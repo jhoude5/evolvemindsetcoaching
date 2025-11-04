@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { withPrefix } from "gatsby";
-import { motion } from "framer-motion";
-import { CheckCircle2, HeartHandshake, Target, Calendar, ArrowRight, MessageCircle, Instagram, Mail, Phone, BookOpen, Sparkles, Download, Menu, X } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+import { CheckCircle2, HeartHandshake, Target, Calendar, ArrowRight, ArrowUp, MessageCircle, Instagram, Linkedin, Facebook, Mail, Phone, BookOpen, Sparkles, Download, Menu, X } from "lucide-react";
 import logoImage from "../images/evolve-logo.png";
 import honeycombBg from "../images/honeycomb.svg";
 import anchorIcon from "../images/wing-anchor.svg";
@@ -27,6 +27,13 @@ const navItems = [
   // { id: "testimonials", label: "Praise" },
   { id: "about", label: "About" },
   { id: "contact", label: "Contact" },
+];
+
+const socialLinks = [
+  { name: "Instagram", href: "https://www.instagram.com/evolve.mindset.coaching/", Icon: Instagram },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/evolve-mindset-coaching-771881304/", Icon: Linkedin },
+  { name: "Facebook", href: "https://www.facebook.com/p/Evolve-Mindset-Coaching-61557901685054/", Icon: Facebook },
+  { name: "Email", href: `mailto:${brand.email}`, Icon: Mail },
 ];
 
 export default function Website() {
@@ -120,69 +127,110 @@ export default function Website() {
         <ArrowRight className="w-4 h-4" />
       </a>
       <div className="flex flex-col min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
-      {/* Sticky Nav */}
-      <header className="sticky top-0 z-50 text-white bg-black border-b backdrop-blur">
-        <div className="flex items-center justify-between px-8 mx-auto max-w-7xl sm:px-6 lg:px-8" style={{ paddingTop: "2rem", paddingBottom: "2rem"}}>
-          <div className="flex items-center gap-3">
-            <motion.img
-              src={logoImage}
-              alt={`${brand.name} logo`}
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.3 }}
-              className="object-cover w-10 h-10 shadow-lg"
-            />
-            <div>
-              <div className="text-xl font-semibold leading-tight">{brand.name}</div>
-              <div className="text-xs -mt-0.5">{brand.slogan}</div>
+        {/* Sticky Nav */}
+        <header className="sticky top-0 z-50 text-white bg-black border-b backdrop-blur">
+          <div className="text-white bg-black social-links">
+            <div className="flex items-center justify-end gap-4 px-8 py-2 mx-auto text-sm max-w-7xl sm:px-6 lg:px-8">
+              {socialLinks.map(({ name, href, Icon }) => (
+                <a
+                  key={name}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-8 h-8 transition bg-white rounded-full text-slate-900 hover:bg-yellow-400"
+                >
+                  <span className="sr-only">{name}</span>
+                  <Icon className="w-4 h-4" />
+                </a>
+              ))}
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <nav className="items-center hidden gap-6 md:flex">
-              {navItems.map((item) => (
-                <a key={item.id} href={`#${item.id}`} className="text-sm transition hover:text-yellow-500">
-                  {item.label}
-                </a>
-              ))}
-              <a href="#contact" className="inline-flex items-center gap-2 px-4 py-2 text-sm text-white transition border-2 border-white rounded-full hover:bg-white hover:text-black">Book a Session</a>
-            </nav>
-            <button
-              type="button"
-              className="inline-flex items-center justify-center w-12 h-12 border rounded-full border-white/40 md:hidden"
-              onClick={() => setMobileOpen((prev) => !prev)}
-              aria-label="Toggle navigation menu"
-              aria-expanded={mobileOpen}
-            >
-              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
-        </div>
-        {mobileOpen && (
-          <div className="px-8 pb-6 mx-auto max-w-7xl md:hidden">
-            <nav className="flex flex-col gap-4 pt-2 text-sm">
-              {navItems.map((item) => (
-                <a
-                  key={item.id}
-                  href={`#${item.id}`}
-                  className="py-2 transition border-b border-white/10 hover:text-yellow-400 last:border-b-0"
-                  onClick={handleNavClick}
-                >
-                  {item.label}
-                </a>
-              ))}
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center gap-2 px-4 py-3 mt-2 text-sm text-black bg-yellow-400 rounded-full hover:bg-yellow-300"
-                onClick={handleNavClick}
+          <div className="flex items-center justify-between px-8 mx-auto max-w-7xl sm:px-6 lg:px-8" style={{ paddingTop: "1rem", paddingBottom: "2rem"}}>
+            <div className="flex items-center gap-3">
+              <motion.img
+                src={logoImage}
+                alt={`${brand.name} logo`}
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                className="object-cover w-10 h-10 shadow-lg"
+              />
+              <div>
+                <div className="text-xl font-semibold leading-tight">{brand.name}</div>
+                <div className="text-xs -mt-0.5">{brand.slogan}</div>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <nav className="items-center hidden gap-6 md:flex">
+                {navItems.map((item) => (
+                  <a key={item.id} href={`#${item.id}`} className="text-sm transition hover:text-yellow-500">
+                    {item.label}
+                  </a>
+                ))}
+                <a href="#contact" className="inline-flex items-center gap-2 px-4 py-2 text-sm text-white transition border-2 border-white rounded-full hover:bg-white hover:text-black">Book a Session</a>
+              </nav>
+              <button
+                type="button"
+                className="inline-flex items-center justify-center w-12 h-12 border rounded-full border-white/40 md:hidden"
+                onClick={() => setMobileOpen((prev) => !prev)}
+                aria-label="Toggle navigation menu"
+                aria-expanded={mobileOpen}
               >
-                Book a Session
-              </a>
-            </nav>
+                {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </button>
+            </div>
           </div>
-        )}
-      </header>
+          <AnimatePresence initial={false}>
+            {mobileOpen && (
+              <motion.div
+                className="px-8 pb-6 mx-auto max-w-7xl md:hidden"
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                style={{ overflow: "hidden" }}
+              >
+                <nav className="flex flex-col gap-4 pt-2 text-sm">
+                  {navItems.map((item) => (
+                    <a
+                      key={item.id}
+                      href={`#${item.id}`}
+                      className="py-2 transition border-b border-white/10 hover:text-yellow-400 last:border-b-0"
+                      onClick={handleNavClick}
+                    >
+                      {item.label}
+                    </a>
+                  ))}
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-3 mt-2 text-sm text-black bg-yellow-400 rounded-full hover:bg-yellow-300"
+                    onClick={handleNavClick}
+                  >
+                    Book a Session
+                  </a>
+                </nav>
+                <div className="text-white bg-black mobile-social-links">
+                  <div className="flex items-center justify-center gap-4 px-8 py-2 mx-auto text-sm max-w-7xl sm:px-6 lg:px-8">
+                    {socialLinks.map(({ name, href, Icon }) => (
+                      <a
+                        key={name}
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-8 h-8 transition bg-white rounded-full text-slate-900 hover:bg-yellow-400"
+                      >
+                        <span className="sr-only">{name}</span>
+                        <Icon className="w-4 h-4" />
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </header>
 
-      <main id="main-content" className="flex-1">
+        <main id="main-content" className="flex-1">
       {/* Hero */}
       <section id="home" className="relative overflow-hidden text-white bg-black hero">
         <div className="absolute inset-0 flex items-end justify-end pointer-events-none" style={{ bottom: "0", right: "-2rem"}}>
@@ -472,7 +520,7 @@ export default function Website() {
               <div className="mt-6 space-y-3 text-slate-700">
                 <p className="flex items-center gap-2 text-base"><Phone className="w-5 h-5"/> <a href={`tel:${brand.phone}`} className="hover:underline">{brand.phone}</a></p>
                 <p className="flex items-center gap-2 text-base"><Mail className="w-5 h-5"/> <a href={`mailto:${brand.email}`} className="hover:underline">{brand.email}</a></p>
-                <p className="flex items-center gap-2 text-base"><Instagram className="w-5 h-5"/> <a href="https://www.instagram.com/evolve.mindset.coaching/" className="hover:underline">@evolvemindsetcoaching</a></p>
+                <p className="flex items-center gap-2 text-base"><Instagram className="w-5 h-5"/> <a target="_blank" href="https://www.instagram.com/evolve.mindset.coaching/" className="hover:underline">@evolvemindsetcoaching</a></p>
                 <p className="flex items-center gap-2 text-base"><MessageCircle className="w-5 h-5"/> <a href={`sms:${brand.phone}`} className="hover:underline">Prefer SMS? Text me to get started.</a></p>
               </div>
             </div>
@@ -582,9 +630,16 @@ export default function Website() {
         <div className="grid items-center gap-6 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 md:grid-cols-2">
           <p className="text-sm text-white">© {new Date().getFullYear()} {brand.name}. All rights reserved.</p>
           <div className="flex gap-4 text-sm text-white md:justify-end">
-            <a href="#home" className="hover:underline">Back to top</a>
-            <a href="#programs" className="hover:underline">Programs</a>
-            <a href="#contact" className="hover:underline">Contact</a>
+           
+            <a href="#programs" className="hover:underline" style={{display: 'flex', alignItems: 'center' }}>Programs</a>
+            <a href="#contact" className="hover:underline" style={{display: 'flex', alignItems: 'center' }}>Contact</a>
+             <a
+              href="#home"
+              className="inline-flex items-center justify-center w-10 h-10 text-black transition-colors duration-200 bg-white border border-transparent rounded-full hover:bg-black hover:text-white hover:border-white"
+              aria-label="Back to top"
+            >
+              <ArrowUp className="w-4 h-4" />
+            </a>
           </div>
         </div>
       </footer>
@@ -656,7 +711,7 @@ export default function Website() {
           </motion.div>
         </div>
       )}
-      </div>
+    </div>
     </>
   );
 }
